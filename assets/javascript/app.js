@@ -53,7 +53,10 @@ let gif = {
                 let gifImg = $("<img>");
                 gifImg.attr({
                     src: response.data[i].images.original_still.url,
-                    class: "image img-fluid my-1",
+                    class: "gif img-fluid my-1",
+                    'data-still': response.data[i].images.original_still.url,
+                    'data-animate': response.data[i].images.original.url,
+                    'data-state': 'still',
                 })
                 newDiv.append(gifImg);
                 $(`#gifCol${currentCol}`).prepend(newDiv);
@@ -63,3 +66,14 @@ let gif = {
         
     }
 }
+
+$(".gifColumn").on("click",".gif",function(){
+    state = $(this).attr("data-state");
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
+})
