@@ -6,3 +6,9 @@ body {
 .navbar-dark {
     background: black;
 }
+
+.buttons {
+    background: red;
+    border-color: red;
+    border-radius: 3px;
+}
