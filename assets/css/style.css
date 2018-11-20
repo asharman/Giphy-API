@@ -7,8 +7,54 @@ body {
     background: black;
 }
 
-.buttons {
-    background: red;
-    border-color: red;
-    border-radius: 3px;
+.buttons0 {
+    color: black;
+    background: rgb(255, 102, 102);
+    border-color: rgb(255, 102, 102);
+    border-radius: 0;
+}
+.buttons1 {
+    color: black;
+    background: rgb(153, 51, 255);
+    border-color: rgb(153, 51, 255);
+    border-radius: 0;
+}
+.buttons2 {
+    color: black;
+    background: rgb(0, 204, 255);
+    border-color: rgb(0, 204, 255);
+    border-radius: 0;
+}
+.buttons3 {
+    color: black;
+    background: rgb(0, 255, 153);
+    border-color: rgb(0, 255, 153);
+    border-radius: 0;
+}
+.buttons4 {
+    color: black;
+    background: rgb(255, 243, 92);
+    border-color: rgb(255, 243, 92);
+    border-radius: 0;
+}
+
+.gif{
+    width: 100%;
+    height: auto;
+}
+
+.border0 {
+    border: 2px solid rgb(255, 102, 102); 
+}
+.border1 {
+    border: 2px solid rgb(153, 51, 255); 
+}
+.border2 {
+    border: 2px solid rgb(0, 204, 255); 
+}
+.border3 {
+    border: 2px solid rgb(0, 255, 153); 
+}
+.border4 {
+    border: 2px solid rgb(255, 243, 92); 
 }
